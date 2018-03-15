@@ -1,19 +1,53 @@
 <?php
 
+function main()
+{
+	$cities = ['auburn', 'bham', 'columbusga', 'dothan', 'shoals', 'gadsden', 'huntsville', 'mobile', 'montgomery', 'tuscaloosa', 'anchorage', 'fairbanks', 'kenai', 'juneau', 'flagstaff', 'mohave', 'phoenix', 'prescott', 'showlow', 'sierravista', 'tucson', 'yuma', 'fayar', 'fortsmith', 'jonesboro', 'littlerock', 'memphis', 'texarkana', 'bakersfield', 'chico', 'fresno', 'goldcountry', 'hanford', 'humboldt', 'imperial', 'inlandempire', 'losangeles', 'mendocino', 'merced', 'modesto', 'monterey', 'orangecounty', 'palmsprings', 'redding', 'reno', 'sacramento', 'sandiego', 'slo', 'santabarbara', 'santamaria', 'sfbay', 'siskiyou', 'stockton', 'susanville', 'ventura', 'visalia', 'yubasutter', 'boulder', 'cosprings', 'denver', 'eastco', 'fortcollins', 'rockies', 'pueblo', 'westslope', 'newlondon', 'hartford', 'newhaven', 'nwct', 'daytona', 'keys', 'fortmyers', 'gainesville', 'cfl', 'jacksonville', 'lakeland', 'lakecity', 'ocala', 'okaloosa', 'orlando', 'panamacity', 'pensacola', 'sarasota', 'miami', 'spacecoast', 'staugustine', 'tallahassee', 'tampa', 'treasure', 'albanyga', 'athensga', 'atlanta', 'augusta', 'brunswick', 'columbusga', 'macon', 'nwga', 'savannah', 'statesboro', 'valdosta', 'boise', 'eastidaho', 'lewiston', 'pullman', 'spokane', 'twinfalls', 'bn', 'chambana', 'chicago', 'decatur', 'lasalle', 'mattoon', 'peoria', 'quadcities', 'rockford', 'carbondale', 'springfieldil', 'stlouis', 'quincy', 'bloomington', 'evansville', 'fortwayne', 'indianapolis', 'kokomo', 'tippecanoe', 'muncie', 'richmondin', 'southbend', 'terrehaute', 'ames', 'cedarrapids', 'desmoines', 'dubuque', 'fortdodge', 'iowacity', 'masoncity', 'omaha', 'quadcities', 'siouxcity', 'ottumwa', 'waterloo', 'kansascity', 'lawrence', 'ksu', 'nwks', 'salina', 'seks', 'swks', 'topeka', 'wichita', 'bgky', 'cincinnati', 'eastky', 'huntington', 'lexington', 'louisville', 'owensboro', 'westky', 'batonrouge', 'cenla', 'houma', 'lafayette', 'lakecharles', 'monroe', 'neworleans', 'shreveport', 'annapolis', 'baltimore', 'chambersburg', 'easternshore', 'frederick', 'smd', 'westmd', 'boston', 'capecod', 'southcoast', 'westernmass', 'worcester', 'annarbor', 'battlecreek', 'centralmich', 'detroit', 'flint', 'grandrapids', 'holland', 'jxn', 'kalamazoo', 'lansing', 'monroemi', 'muskegon', 'nmi', 'porthuron', 'saginaw', 'southbend', 'swmi', 'thumb', 'up', 'bemidji', 'brainerd', 'duluth', 'fargo', 'mankato', 'minneapolis', 'rmn', 'marshall', 'stcloud', 'gulfport', 'hattiesburg', 'jackson', 'memphis', 'meridian', 'northmiss', 'natchez', 'columbiamo', 'joplin', 'kansascity', 'kirksville', 'loz', 'semo', 'springfield', 'stjoseph', 'stlouis', 'billings', 'bozeman', 'butte', 'montana', 'greatfalls', 'helena', 'kalispell', 'missoula', 'asheville', 'boone', 'charlotte', 'eastnc', 'fayetteville', 'greensboro', 'hickory', 'onslow', 'outerbanks', 'raleigh', 'wilmington', 'winstonsalem', 'grandisland', 'lincoln', 'northplatte', 'omaha', 'scottsbluff', 'siouxcity', 'elko', 'lasvegas', 'reno', 'cnj', 'jerseyshore', 'newjersey', 'southjersey', 'albuquerque', 'clovis', 'farmington', 'lascruces', 'roswell', 'santafe', 'albany', 'binghamton', 'buffalo', 'catskills', 'chautauqua', 'elmira', 'fingerlakes', 'glensfalls', 'hudsonvalley', 'ithaca', 'longisland', 'newyork', 'oneonta', 'plattsburgh', 'potsdam', 'rochester', 'syracuse', 'twintiers', 'utica', 'watertown', 'bismarck', 'fargo', 'grandforks', 'nd', 'akroncanton', 'ashtabula', 'athensohio', 'chillicothe', 'cincinnati', 'cleveland', 'columbus', 'dayton', 'huntington', 'limaohio', 'mansfield', 'wheeling', 'parkersburg', 'sandusky', 'toledo', 'tuscarawas', 'youngstown', 'zanesville', 'fortsmith', 'lawton', 'enid', 'oklahomacity', 'stillwater', 'texoma', 'tulsa', 'bend', 'corvallis', 'eastoregon', 'eugene', 'klamath', 'medford', 'oregoncoast', 'portland', 'roseburg', 'salem', 'altoona', 'chambersburg', 'erie', 'harrisburg', 'lancaster', 'allentown', 'meadville', 'philadelphia', 'pittsburgh', 'poconos', 'reading', 'scranton', 'pennstate', 'twintiers', 'williamsport', 'york', 'charleston', 'columbia', 'florencesc', 'greenville', 'hiltonhead', 'myrtlebeach', 'nesd', 'csd', 'rapidcity', 'siouxfalls', 'sd', 'chattanooga', 'clarksville', 'cookeville', 'jacksontn', 'knoxville', 'memphis', 'nashville', 'tricities', 'abilene', 'amarillo', 'austin', 'beaumont', 'brownsville', 'collegestation', 'corpuschristi', 'dallas', 'nacogdoches', 'delrio', 'elpaso', 'galveston', 'houston', 'killeen', 'laredo', 'lubbock', 'mcallen', 'odessa', 'sanangelo', 'sanantonio', 'sanmarcos', 'bigbend', 'texarkana', 'texoma', 'easttexas', 'victoriatx', 'waco', 'wichitafalls', 'logan', 'ogden', 'provo', 'saltlakecity', 'stgeorge', 'charlottesville', 'danville', 'easternshore', 'fredericksburg', 'harrisonburg', 'lynchburg', 'blacksburg', 'norfolk', 'richmond', 'roanoke', 'swva', 'winchester', 'bellingham', 'kpr', 'lewiston', 'moseslake', 'olympic', 'pullman', 'seattle', 'skagit', 'spokane', 'wenatchee', 'yakima', 'charlestonwv', 'martinsburg', 'huntington', 'morgantown', 'wheeling', 'parkersburg', 'swv', 'wv', 'appleton', 'duluth', 'eauclaire', 'greenbay', 'janesville', 'racine', 'lacrosse', 'madison', 'milwaukee', 'northernwi', 'sheboygan', 'wausau'];
+// $cities = ['portland','boise','seattle','spokane'];
+
+	// $queries = ['Subaru h6', 'Subaru ll bean', 'Subaru l.l. Bean', 'Subaru VDC', 'subaru'];
+	// $queries = ['Tundra Crewmax', 'Tundra 1794', 'Tundra LTD', 'Tundra platinum'];
+	$queries = ['vanagon', 'eurovan', 'euro van', 'westfalia', 'delica', 'hiace', 'liteace', 'town ace', 'master ace', ];
+	// $queries = ['t100'];
+	// $queries = ['c30'];
+	// $queries = ['cx-5','pathfinder','outlander', 'jeep'];
+	// $queries = ['subaru'];
+	// $queries = ['golf', 'vw golf'];
+	// $queries = ['cr v', 'cr-v'];
+	// $queries = ['sprinter',];
+
+	$params = [
+		'max_price'=>15000,
+		'min_price'=>1000,
+		'max_auto_miles'=>150000,
+		'min_auto_miles'=>1000,
+		'srchType'      => 'T',
+		// 'auto_cylinders'=> 4,
+		// 'auto_drivetrain' => 3, //awd
+		'auto_title_status' =>1,
+		// 'auto_paint' => 1, //black
+	];
+
+	//search($cities, 'apa', $params, $queries); //apartments
+	search($cities, 'cta', $params, $queries); //cars 
+}
+
+
 class CLSearch extends Threaded
 {
 	public $data = [];
 
-	function __construct($city, $params)
+	function __construct($city, $category, $params)
 	{
 		$this->city   = $city;
 		$this->params = $params;
+		$this->cateogry = $category;
 	}
 
 	public function run()
 	{
 		// echo microtime(true).PHP_EOL;
-		$data = basic_search($this->city, $this->params);
+		$data = basic_search($this->city, $this->cateogry, $this->params);
 
 		foreach (json_decode($data) as $result)
 		{
@@ -42,34 +76,9 @@ class SearchPool extends Pool
 	}
 }
 
-function main()
+function search($cities, $category, $params, $queries)
 {
-	$cities = ['auburn', 'bham', 'columbusga', 'dothan', 'shoals', 'gadsden', 'huntsville', 'mobile', 'montgomery', 'tuscaloosa', 'anchorage', 'fairbanks', 'kenai', 'juneau', 'flagstaff', 'mohave', 'phoenix', 'prescott', 'showlow', 'sierravista', 'tucson', 'yuma', 'fayar', 'fortsmith', 'jonesboro', 'littlerock', 'memphis', 'texarkana', 'bakersfield', 'chico', 'fresno', 'goldcountry', 'hanford', 'humboldt', 'imperial', 'inlandempire', 'losangeles', 'mendocino', 'merced', 'modesto', 'monterey', 'orangecounty', 'palmsprings', 'redding', 'reno', 'sacramento', 'sandiego', 'slo', 'santabarbara', 'santamaria', 'sfbay', 'siskiyou', 'stockton', 'susanville', 'ventura', 'visalia', 'yubasutter', 'boulder', 'cosprings', 'denver', 'eastco', 'fortcollins', 'rockies', 'pueblo', 'westslope', 'newlondon', 'hartford', 'newhaven', 'nwct', 'daytona', 'keys', 'fortmyers', 'gainesville', 'cfl', 'jacksonville', 'lakeland', 'lakecity', 'ocala', 'okaloosa', 'orlando', 'panamacity', 'pensacola', 'sarasota', 'miami', 'spacecoast', 'staugustine', 'tallahassee', 'tampa', 'treasure', 'albanyga', 'athensga', 'atlanta', 'augusta', 'brunswick', 'columbusga', 'macon', 'nwga', 'savannah', 'statesboro', 'valdosta', 'boise', 'eastidaho', 'lewiston', 'pullman', 'spokane', 'twinfalls', 'bn', 'chambana', 'chicago', 'decatur', 'lasalle', 'mattoon', 'peoria', 'quadcities', 'rockford', 'carbondale', 'springfieldil', 'stlouis', 'quincy', 'bloomington', 'evansville', 'fortwayne', 'indianapolis', 'kokomo', 'tippecanoe', 'muncie', 'richmondin', 'southbend', 'terrehaute', 'ames', 'cedarrapids', 'desmoines', 'dubuque', 'fortdodge', 'iowacity', 'masoncity', 'omaha', 'quadcities', 'siouxcity', 'ottumwa', 'waterloo', 'kansascity', 'lawrence', 'ksu', 'nwks', 'salina', 'seks', 'swks', 'topeka', 'wichita', 'bgky', 'cincinnati', 'eastky', 'huntington', 'lexington', 'louisville', 'owensboro', 'westky', 'batonrouge', 'cenla', 'houma', 'lafayette', 'lakecharles', 'monroe', 'neworleans', 'shreveport', 'annapolis', 'baltimore', 'chambersburg', 'easternshore', 'frederick', 'smd', 'westmd', 'boston', 'capecod', 'southcoast', 'westernmass', 'worcester', 'annarbor', 'battlecreek', 'centralmich', 'detroit', 'flint', 'grandrapids', 'holland', 'jxn', 'kalamazoo', 'lansing', 'monroemi', 'muskegon', 'nmi', 'porthuron', 'saginaw', 'southbend', 'swmi', 'thumb', 'up', 'bemidji', 'brainerd', 'duluth', 'fargo', 'mankato', 'minneapolis', 'rmn', 'marshall', 'stcloud', 'gulfport', 'hattiesburg', 'jackson', 'memphis', 'meridian', 'northmiss', 'natchez', 'columbiamo', 'joplin', 'kansascity', 'kirksville', 'loz', 'semo', 'springfield', 'stjoseph', 'stlouis', 'billings', 'bozeman', 'butte', 'montana', 'greatfalls', 'helena', 'kalispell', 'missoula', 'asheville', 'boone', 'charlotte', 'eastnc', 'fayetteville', 'greensboro', 'hickory', 'onslow', 'outerbanks', 'raleigh', 'wilmington', 'winstonsalem', 'grandisland', 'lincoln', 'northplatte', 'omaha', 'scottsbluff', 'siouxcity', 'elko', 'lasvegas', 'reno', 'cnj', 'jerseyshore', 'newjersey', 'southjersey', 'albuquerque', 'clovis', 'farmington', 'lascruces', 'roswell', 'santafe', 'albany', 'binghamton', 'buffalo', 'catskills', 'chautauqua', 'elmira', 'fingerlakes', 'glensfalls', 'hudsonvalley', 'ithaca', 'longisland', 'newyork', 'oneonta', 'plattsburgh', 'potsdam', 'rochester', 'syracuse', 'twintiers', 'utica', 'watertown', 'bismarck', 'fargo', 'grandforks', 'nd', 'akroncanton', 'ashtabula', 'athensohio', 'chillicothe', 'cincinnati', 'cleveland', 'columbus', 'dayton', 'huntington', 'limaohio', 'mansfield', 'wheeling', 'parkersburg', 'sandusky', 'toledo', 'tuscarawas', 'youngstown', 'zanesville', 'fortsmith', 'lawton', 'enid', 'oklahomacity', 'stillwater', 'texoma', 'tulsa', 'bend', 'corvallis', 'eastoregon', 'eugene', 'klamath', 'medford', 'oregoncoast', 'portland', 'roseburg', 'salem', 'altoona', 'chambersburg', 'erie', 'harrisburg', 'lancaster', 'allentown', 'meadville', 'philadelphia', 'pittsburgh', 'poconos', 'reading', 'scranton', 'pennstate', 'twintiers', 'williamsport', 'york', 'charleston', 'columbia', 'florencesc', 'greenville', 'hiltonhead', 'myrtlebeach', 'nesd', 'csd', 'rapidcity', 'siouxfalls', 'sd', 'chattanooga', 'clarksville', 'cookeville', 'jacksontn', 'knoxville', 'memphis', 'nashville', 'tricities', 'abilene', 'amarillo', 'austin', 'beaumont', 'brownsville', 'collegestation', 'corpuschristi', 'dallas', 'nacogdoches', 'delrio', 'elpaso', 'galveston', 'houston', 'killeen', 'laredo', 'lubbock', 'mcallen', 'odessa', 'sanangelo', 'sanantonio', 'sanmarcos', 'bigbend', 'texarkana', 'texoma', 'easttexas', 'victoriatx', 'waco', 'wichitafalls', 'logan', 'ogden', 'provo', 'saltlakecity', 'stgeorge', 'charlottesville', 'danville', 'easternshore', 'fredericksburg', 'harrisonburg', 'lynchburg', 'blacksburg', 'norfolk', 'richmond', 'roanoke', 'swva', 'winchester', 'bellingham', 'kpr', 'lewiston', 'moseslake', 'olympic', 'pullman', 'seattle', 'skagit', 'spokane', 'wenatchee', 'yakima', 'charlestonwv', 'martinsburg', 'huntington', 'morgantown', 'wheeling', 'parkersburg', 'swv', 'wv', 'appleton', 'duluth', 'eauclaire', 'greenbay', 'janesville', 'racine', 'lacrosse', 'madison', 'milwaukee', 'northernwi', 'sheboygan', 'wausau'];
-
-	// $cities = ['portland','boise','seattle','spokane'];
-	// $queries = ['Subaru h6', 'Subaru ll bean', 'Subaru l.l. Bean', 'Subaru VDC', 'subaru'];
-	// $queries = ['Tundra Crewmax', 'Tundra 1794', 'Tundra LTD', 'Tundra platinum'];
-	// $queries = ['vanagon', 'eurovan', 'euro van', 'westfalia', 'delica', 'hiace'];
-	$queries = ['t100'];
-	// $queries = ['cx-5','pathfinder','outlander', 'jeep'];
-	// $queries = ['subaru'];
-	// $queries = ['golf', 'vw golf'];
-	// $queries = ['cr v', 'cr-v'];
-
-	// $queries = ['sprinter',];
 	$unique = [];
-
-	$params = [
-		'max_price'=>10000,
-		'min_price'=>1000,
-		'max_auto_miles'=>150000,
-		'min_auto_miles'=>1000,
-		'srchType'      => 'T',
-		// 'auto_cylinders'=> 4,
-		'auto_drivetrain' => 3, //awd
-		'auto_title_status' =>1,
-		// 'auto_paint' => 1, //black
-	];
 
 	$pool = new SearchPool(5, Worker::class);
 
@@ -79,7 +88,7 @@ function main()
 		{
 			$params['query'] = $query;
 
-			$pool->submit(new CLSearch($city,$params));
+			$pool->submit(new CLSearch($city,$category, $params));
 		}
 	}
 
@@ -96,40 +105,9 @@ function main()
 	echo print_html($queries[0], $unique);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function basic_search($city, $params)
+function basic_search($city, $category, $params)
 {
-	$response = get("https://$city.craigslist.org/search/cto?".http_build_query($params));
+	$response = get("https://$city.craigslist.org/search/$category?".http_build_query($params));
 
 	require 'QueryPath/src/qp.php';
 
