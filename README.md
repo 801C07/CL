@@ -1,6 +1,6 @@
 README:
 
-Follow instructions on https://www.smddzcy.com/2016/01/tutorial-multi-threading-in-php7-pthreads/ to install the proper version of PHP and pthreads. Don't vere from these instructions, setting up pthreads on OSX is a pain.
+Follow instructions on https://www.smddzcy.com/2016/01/tutorial-multi-threading-in-php7-pthreads/ to install the proper version of PHP and pthreads.
 
 Consider running the following if there is an issue with older versions of php already on your system:
 ```brew remove --force --ignore-dependencies httpd
